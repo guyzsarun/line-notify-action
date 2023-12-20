@@ -36,9 +36,9 @@ func notify(data url.Values, token string) *http.Response {
 }
 
 func main() {
-	accessToken := getEnv("ACCESS_TOKEN", "", true)
-	message := getEnv("MESSAGE", "hello world", false)
-	notification := getEnv("DISABLE_NOTIFICATION", "false", false)
+	accessToken := getEnv("INPUT_ACCESS_TOKEN", "", true)
+	message := getEnv("INPUT_MESSAGE", "hello world", false)
+	notification := getEnv("INPUT_DISABLE_NOTIFICATION", "false", false)
 
 	data := url.Values{
 		"message":              {message},
