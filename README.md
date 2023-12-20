@@ -17,6 +17,6 @@ steps:
 
 | **Input**              | **Required** | **Default**   | **Description**                                                |
 |------------------------|--------------|---------------|-----------------------------------------------------------------|
-| `access_token`         | true         |               | Access token generated from https://notify-bot.line.me/en/      |
-| `message`              | true         | "hello world" | The message to send to the corresponding access_token endpoint. |
-| `disable_notification` | false        | false       | Disable the notification if set to `true`                       |
+| `access_token`         | ✅         |               | Access token generated from <https://notify-bot.line.me/en/>      |
+| `message`              | ✅         | "hello world" | The message to send to the corresponding access_token endpoint. |
+| `disable_notification` | ✅        | false       | Disable the notification if set to `true`                       |
