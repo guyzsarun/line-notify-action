@@ -15,8 +15,3 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.access_token }}
-    - ${{ inputs.message }}
-    - ${{ inputs.disable_notification }}
-
