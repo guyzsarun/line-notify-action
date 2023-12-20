@@ -1,0 +1,22 @@
+# action.yml
+name: 'LineNotifyAction'
+description: 'Send Line notification from Github Action'
+inputs:
+  access_token:
+    description: 'access token generated from https://notify-bot.line.me'
+    required: true
+  message:
+    description: 'message to send'
+    required: true
+  disable_notification:
+    description: 'If set true disable notification to Line'
+    required: false
+    default: 'false'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.access_token }}
+    - ${{ inputs.message }}
+    - ${{ inputs.disable_notification }}
+
