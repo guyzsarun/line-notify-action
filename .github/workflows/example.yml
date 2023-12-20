@@ -13,3 +13,6 @@ jobs:
 
       - name: send notification
         uses:  ./
+        with:
+          access_token: ${{ secrets.ACCESS_TOKEN }}
+          message: "hello world"
