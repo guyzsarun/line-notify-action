@@ -1,6 +1,9 @@
 # line-notify-action
+[![Docker Build](https://github.com/guyzsarun/line-notify-action/actions/workflows/docker-build.yml/badge.svg)](https://github.com/guyzsarun/line-notify-action/actions/workflows/docker-build.yml)
 
 This is a Github Action that sends Line notification
+
+![notify-action](./assets/line-notify-action.png)
 
 ## Example usage
 
