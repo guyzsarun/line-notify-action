@@ -2,6 +2,8 @@
 
 This is a Github Action that sends Line notification
 
+![notify-action](./assets/line-notify-action.png)
+
 ## Example usage
 
 ```
