@@ -11,7 +11,7 @@ Github Action that sends Line notification
 ```
 steps:
 - name: notify
-  uses: actions/hello-world-docker-action@v2
+  uses: guyzsarun/line-notify-action
   with:
     access_token: ${{ secrets.ACCESS_TOKEN }}
     message: 'hello world'
