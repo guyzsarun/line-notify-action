@@ -32,5 +32,5 @@ jobs:
         file: Dockerfile
         push: true
         tags: |
-          ghcr.io/guyzsarun/line-notify-action:${{env.GITHUB_REF_NAME}}
+          ghcr.io/guyzsarun/line-notify-action:${{ env.GITHUB_REF_NAME }}
           ghcr.io/guyzsarun/line-notify-action:latest
