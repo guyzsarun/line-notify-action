@@ -1,7 +1,7 @@
 FROM golang:1.21.4-bullseye
-LABEL   org.opencontainers.image.source=https://github.com/guyzsarun/line-notify-action \
-        org.opencontainers.image.licenses=Apache-2.0 \
-        org.opencontainers.image.authors=sarun.nunt@gmail.com
+LABEL org.opencontainers.image.source="https://github.com/guyzsarun/line-notify-action" \
+      org.opencontainers.image.licenses="Apache-2.0" \
+      org.opencontainers.image.authors="sarun.nunt@gmail.com"
 
 
 WORKDIR /app
