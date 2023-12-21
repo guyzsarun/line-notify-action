@@ -2,6 +2,8 @@ name: Docker Build
 
 on:
   push:
+    tags:
+      - v*
 
 jobs:
   build:
@@ -27,7 +29,8 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         context: .
-        no-cache: true
         file: Dockerfile
         push: true
-        tags: ghcr.io/guyzsarun/line-notify-action:latest
+        tags: |
+          ghcr.io/guyzsarun/line-notify-action:${{env.GITHUB_REF_NAME}}
+          ghcr.io/guyzsarun/line-notify-action:latest
