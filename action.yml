@@ -8,6 +8,7 @@ inputs:
   message:
     description: 'message to send'
     required: true
+    default: 'hello world'
   disable_notification:
     description: 'If set true disable notification to Line'
     required: false
