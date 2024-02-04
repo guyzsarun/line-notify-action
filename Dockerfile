@@ -6,10 +6,12 @@ LABEL org.opencontainers.image.source="https://github.com/guyzsarun/line-notify-
 
 WORKDIR /app
 
+COPY entrypoint.sh /entrypoint.sh
+
 COPY go.mod ./
 RUN go mod download
 
 COPY *.go ./
 RUN CGO_ENABLED=0 GOOS=linux go build -o /line-notify-action
 
-CMD ["/line-notify-action"]
+ENTRYPOINT ["/entrypoint.sh"]
