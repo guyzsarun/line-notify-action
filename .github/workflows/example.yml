@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: send notification
-        uses:  guyzsarun/line-notify-action@845812915a10e1a10d1b113acca9495b67eb419c
+        uses:  guyzsarun/line-notify-action@a83da35b008cb235b1e7dab5fde2753c2543ee66
         with:
           access_token: ${{ secrets.ACCESS_TOKEN }}
           message: "hello world"
